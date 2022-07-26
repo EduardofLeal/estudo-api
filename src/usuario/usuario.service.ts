@@ -25,4 +25,8 @@ export class UsuarioService {
       (usuario) => usuario.nomeDeUsuario === nomeDeUsuario,
     );
   }
+
+  async findAll(): Promise<Usuario[]> {
+    return await this.usuarios;
+  }
 }
